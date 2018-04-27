@@ -1,4 +1,5 @@
 # web-template
+## A quick template for a website using scss and bootstrap
 
 ## Install Packages:
 * ``` npm install ```
