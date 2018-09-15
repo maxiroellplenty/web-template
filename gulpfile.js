@@ -5,7 +5,6 @@ var csso = require('gulp-csso');
 var del = require('del');
 var gulp = require('gulp');
 var htmlminify = require("gulp-html-minify");
-var runSequence = require('run-sequence');
 var sass = require('gulp-sass');
 var uglify = require('gulp-uglify');
 const imagemin = require('gulp-imagemin');
@@ -96,14 +95,15 @@ gulp.task('images', () =>
 gulp.task('clean', () => del(['dist']));
 
 // Gulp task to minify all files
-gulp.task('build', ['clean'], function () {
-  runSequence(
-    'styles',
-    'scripts',
-    'build-html',
-    'images',
-    'build-js',
-    'build-views-html',
-    'build-views-sass'
-  );
-});
+gulp.task('build', 
+  gulp.series(
+      'clean',
+      'styles',
+      'scripts',
+      'build-html',
+      'images',
+      'build-js',
+      'build-views-html',
+      'build-views-sass'
+  )
+);
