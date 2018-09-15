@@ -1,0 +1,64 @@
+@import './variables';
+@import './base-structure';
+
+.base-container {
+  .profile-left {
+    background: #31383d;
+    .short-about {
+      text-align: center;
+      color: var(--secondary-structure-color);
+      margin: 20% 0;
+      .profile-img {
+        margin: 0 auto;
+        border-radius: 50%;
+        width: 250px;
+        height: 250px;
+        background-position: center;
+        background-image: url(../assets/images/profile_mr.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+      h2 {
+        margin-top: 30px;
+      }
+      .job-link {
+        color: var(--header-color);
+      }
+    }
+  }
+  .profile-right {
+    h2 {
+      color: var(--header-color);
+      text-transform: capitalize;
+    }
+    %about-container {
+      table {
+        td {
+          color: var(--secondary-structure-color);
+          line-height: 30px;
+          font-size: 18px;
+          padding-top: 10px;
+          .table-img {
+            font-size: 30px;
+            margin-right: 10px;
+            color: var(--primary-structure-color);
+          }
+        }
+      }
+    }
+    .long-about {
+      @extend %about-container;
+    }
+    .link-about {
+      @extend %about-container;
+    }
+    .tech-about {
+      img {
+        height: 90px;
+        margin: 15px;
+      }
+    }
+  }
+}
+
+

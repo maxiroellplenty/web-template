@@ -8,16 +8,27 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/maxiroellplenty/web-template.git"
+    "url": "git+https://github.com/maxiroellplenty/roelldev.git"
   },
   "author": "Maximilian Röll",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/maxiroellplenty/web-template/issues"
+    "url": "https://github.com/maxiroellplenty/roelldev/issues"
   },
-  "homepage": "https://github.com/maxiroellplenty/web-template#readme",
+  "homepage": "https://www.roelldev.de",
   "devDependencies": {
+    "del": "^2.0.2",
     "gulp": "^3.9.1",
-    "gulp-sass": "^4.0.1"
+    "gulp-autoprefixer": "latest",
+    "gulp-csso": "^2.0.0",
+    "gulp-html-minify": "0.0.14",
+    "gulp-htmlmin": "^4.0.0",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-sass": "^4.0.1",
+    "gulp-uglify": "^2.0.0",
+    "run-sequence": "^1.2.2"
+  },
+  "dependencies": {
+    "jquery-lazy": "^1.7.10"
   }
 }
