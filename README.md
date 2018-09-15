@@ -5,13 +5,14 @@ A quick template for a website using scss and bootstrap
 * ``` npm install ```
 
 ## Build
-*  run: ``` sh build.sh ```
+* Run: ``` sh build.sh ```
 * Edit paths at gulpfile.js
 
 ## Deploy
-* run: ``` sh deploy.sh ```
+* Run: ``` sh deploy.sh ```
 * Update the branch & ssh connection at 
 `deploy.sh` file.
 
 ## Create new view
-* run: `sh cv.sh`
+* Method to create a new view with all needed files (html,css,js).
+* Run: `sh cv.sh`
