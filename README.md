@@ -4,9 +4,14 @@ A quick template for a website using scss and bootstrap
 ## Install Packages:
 * ``` npm install ```
 
-## Compile Scss to Css
-* ``` gulp sass ```
+## Build
+*  run: ``` sh build.sh ```
 * Edit paths at gulpfile.js
 
-## Run auto compile
-* ``` gulp sass:watch ```
+## Deploy
+* run: ``` sh deploy.sh ```
+* Update the branch & ssh connection at 
+`deploy.sh` file.
+
+## Create new view
+* run: `sh cv.sh`
