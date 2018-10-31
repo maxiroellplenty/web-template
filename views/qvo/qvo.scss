@@ -9,12 +9,16 @@ body {
 // Small devices (landscape phones, 576px and up)
 @media (max-width: 576px) {
   h1 {
-    font-size: 1.2rem !important;
+    font-size: 1.3rem !important;
   }
   h2 {
-    font-size: 1.1rem !important;
+    font-size: 1.2rem !important;
   }
   h3 {
+    font-size: 1.1rem !important;
+  }
+  h4
+  {
     font-size: 1rem !important;
   }
 }
@@ -30,6 +34,10 @@ body {
   h3 {
     font-size: 1.2rem !important;
   }
+  h4
+  {
+    font-size: 1.1rem !important;
+  }
 }
 
 // Large devices (desktops, 992px and up)
@@ -43,6 +51,10 @@ body {
   h3 {
     font-size: 1.3rem !important;
   }
+  h4
+  {
+    font-size: 1.2rem !important;
+  }
 }
 
 // Extra large devices (large desktops, 1200px and up)
@@ -55,6 +67,10 @@ body {
   }
   h3 {
     font-size: 1.8rem !important;
+  }
+  h4
+  {
+    font-size: 1.7rem !important;
   }
 }
 
@@ -140,7 +156,7 @@ body {
   }
 }
 .barbier-image-container {
-  min-height: 100vh;
+  min-height: 80vh;
   background-image: url("../assets/images/iStock_000084252567_Large-e1465271896270-sw.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -156,29 +172,64 @@ body {
 
 .herren-image-container-1 {
   height: 50vh;
-  background-image: url("https://www.myfinancecoach.org/wp-content/uploads/2017/05/events-placeholder.jpg");
+  background-image: url("../assets/images/stock-photo-portrait-of-young-man-wearing-suspenders-in-urban-background-188209364.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 .herren-image-container-2 {
   height: 50vh;
-  background-image: url("https://www.myfinancecoach.org/wp-content/uploads/2017/05/events-placeholder.jpg");
+  background-image: url("../assets/images/stock-photo-side-view-portrait-of-thinking-stylish-young-man-looking-away-538654906.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 .herren-image-container-3 {
   height: 50vh;
-  background-image: url("https://www.myfinancecoach.org/wp-content/uploads/2017/05/events-placeholder.jpg");
+  background-image: url("../assets/images/stock-photo-washing-hair-544510243.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 .herren-leistungen-container {
-  height: 50vh;
-  background-color: #2a2a2a;
+  margin-top: 30px;
+  min-height: 50vh;
+  background-color: white;
+  .card-img-top
+  {
+    height: 200px;
+  }
 }
 .qvo-quote-1 {
   height: 30vh;
-  background-color: #f8f8f8;
+  background-color: #fff;
+  .swiper-pagination-bullet-active
+  {
+    background: #2a2a2a !important;
+  }
+  .swiper-container {
+    width: 100%;
+    height: 100%;
+  }
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    /* Center slide text vertically */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    resize: vertical;
+    a
+    {
+      text-decoration: none;
+    }
+    .fa-star, .fa-star-half-alt, .google-rev-score
+    {
+      color: orange;
+    }
+    .google-rev
+    {
+      color: #2a2a2a;
+    }
+  }
 }
 .ladies-container {
   height: 20vh;
