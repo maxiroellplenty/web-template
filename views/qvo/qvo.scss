@@ -1,5 +1,6 @@
 @import "../../variables";
 @import url("https://fonts.googleapis.com/css?family=Roboto+Slab:400,700");
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:700i');
 
 body {
   --primary-font-color: #2f2c2c;
@@ -112,14 +113,16 @@ body {
     right: 0;
   }
 }
-
+.card-container
+{
+  min-height: 50vh;
+}
 .c-card
 {
   position: absolute;
   top:30%;
   left: 0;
   right: 0;
-  min-height: 50vh;
   .img-header
   {
     display: flex;
@@ -149,11 +152,23 @@ body {
   .card-buttons
   {
     display: flex;
+    justify-content: center;
     padding: 2rem;
     button
     {
       border-radius: 1px;
       border: 1px solid var(--primary-font-color);
+      padding: 0.5rem;
+      &:hover
+      {
+        cursor: pointer;
+        background-color: var(--light-gray);
+      }
+      a
+      {
+        text-decoration: none;
+        color: var(--primary-font-color) !important;
+      }
     }
   }
 }
@@ -201,27 +216,6 @@ body {
   hr {
     border-top: 2px solid var(--white);
     margin: 0 10% 20px 10%;
-  }
-  .barbier-util-container {
-    height: 20vh;
-    .pinsel-image {
-      background-image: url("../assets/images/pinsel.svg");
-      background-repeat: no-repeat;
-      background-size: contain;
-      background-position: center;
-    }
-    .kamm-image {
-      background-image: url("../assets/images/kamm.svg");
-      background-repeat: no-repeat;
-      background-size: contain;
-      background-position: center;
-    }
-    .rasiermesser-image {
-      background-image: url("../assets/images/rasiermesser.svg");
-      background-repeat: no-repeat;
-      background-size: contain;
-      background-position: center;
-    }
   }
 }
 .barbier-image-container 
@@ -317,7 +311,13 @@ body {
   }
 }
 .ladies-container {
-  height: 20vh;
+  font-family: 'Playfair Display', serif;
+  h2
+  {
+    letter-spacing: 0.5rem !important;
+    color: pink;
+    text-shadow: 1px 1px #f0f0f0 !important;
+  }
   background-color: var(--light-gray);
   text-align: center;
 }
