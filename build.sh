@@ -8,6 +8,7 @@ function copyAdditionalFiles()
 {
     echo 'copy custom files';
     cp ./.htaccess ./dist
+    cp -rf ./assets ./dist
     echo 'done'
 }
 

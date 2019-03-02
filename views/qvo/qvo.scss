@@ -2,15 +2,27 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto+Slab:400,700");
 
 body {
-  --primary-font-color: #2a2a2a;
+  --primary-font-color: #2f2c2c;
   --light-gray: #f8f8f8;
   --white: #ffffff;
   font-family: "Roboto Slab", serif !important;
   background-color: var(--white);
+  h1 {
+    font-size: 1.5rem !important;
+  }
+  h2 {
+    font-size: 1.4rem !important;
+  }
+  h3 {
+    font-size: 1.3rem !important;
+  }
+  h4 {
+    font-size: 1.2rem !important;
+  }
 }
 
 // Small devices (landscape phones, 576px and up)
-@media (max-width: 576px) {
+@media (min-width: 576px) {
   h1 {
     font-size: 1.3rem !important;
   }
@@ -82,18 +94,70 @@ body {
 %image-styles {
   background-repeat: no-repeat;
   background-size: cover;
+  border-radius: 2px;
 }
 
 .start-container {
   background-color: var(--primary-font-color);
   height: 100vh;
   .qvo-brand-logo {
-    width: 30%;
+    width: 30vw;
+    height: 30vh;
     margin: 0 auto;
     display: block;
-    @extend %vertical-center;
+    margin: 0 auto;
+    position: relative;
+    top: 30%;
+    left: 0;
+    right: 0;
   }
 }
+
+.c-card
+{
+  position: absolute;
+  top:30%;
+  left: 0;
+  right: 0;
+  min-height: 50vh;
+  .img-header
+  {
+    display: flex;
+    justify-content: center;
+    img
+    {
+      display: inline-block;
+      height: 50px;
+    }
+    hr
+    {
+      display: inline-block;
+      margin: 25px;
+      width: 20%;
+      border: 1px solid var(--primary-font-color); 
+    }
+  }
+  .card-content
+  {
+    .header
+    {
+      margin-top: 2rem;
+      font-size: 1.3rem;
+    }
+    text-align: center;
+  }
+  .card-buttons
+  {
+    display: flex;
+    padding: 2rem;
+    button
+    {
+      border-radius: 1px;
+      border: 1px solid var(--primary-font-color);
+    }
+  }
+}
+
 .intro-container {
   background-color: var(--white);
   .header-intro {
@@ -101,13 +165,12 @@ body {
     text-align: center;
     height: 50vh;
     div {
-      @extend %vertical-center;
       hr {
         margin-right: 20%;
         border-top: 2px solid var(--primary-font-color);
       }
     }
-    h3 {
+    h4 {
       position: absolute;
       bottom: 30px;
       right: 0;
@@ -122,15 +185,18 @@ body {
     height: 50vh;
   }
 }
+.barbier-logo {
+  width: 30%;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+}
 .barbier-about-container {
-  background-color: var(--primary-font-color);
   text-align: center;
   color: var(--white);
-  .barbier-logo {
-    width: 50%;
-    height: auto;
-    margin: 0 auto;
-    display: block;
+  h2
+  {
+    font-size: 3rem !important;
   }
   hr {
     border-top: 2px solid var(--white);
@@ -138,7 +204,6 @@ body {
   }
   .barbier-util-container {
     height: 20vh;
-    margin: 10%;
     .pinsel-image {
       background-image: url("../assets/images/pinsel.svg");
       background-repeat: no-repeat;
@@ -159,34 +224,55 @@ body {
     }
   }
 }
-.barbier-image-container {
-  min-height: 80vh;
-  background-image: url("../assets/images/iStock_000084252567_Large-e1465271896270-sw.png");
+.barbier-image-container 
+{
+  min-height: 60vh;
+  background-image: url("../assets/images/barbier-img.png");
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
 }
+
+.header-caption {
+  .c-header
+  {
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+    text-shadow: 1px 1px #1f1f1f;
+    font-size: 70px !important;
+  }
+  h4
+  {
+    margin-top: 1.5rem;
+    color: gray;
+  }
+  .header-hr
+  {
+    border: 1px solid var(--primary-font-color);
+    width: 30%;
+    display: inline-block;
+  }
+  @extend %vertical-center;
+}
+
 .herren-container {
-  height: 20vh;
   background-color: var(--white);
   text-align: center;
-  .header-caption {
-    @extend %vertical-center;
-  }
 }
 
 .herren-image-container-1 {
-  height: 50vh;
+  min-height: 50vh;
   background-image: url("../assets/images/stock-photo-portrait-of-young-man-wearing-suspenders-in-urban-background-188209364.jpg");
   @extend %image-styles;
 }
 .herren-image-container-2 {
-  height: 50vh;
+  min-height: 50vh;
   background-image: url("../assets/images/stock-photo-side-view-portrait-of-thinking-stylish-young-man-looking-away-538654906.jpg");
   @extend %image-styles;
 }
 .herren-image-container-3 {
-  height: 50vh;
-  background-image: url("../assets/images/stock-photo-washing-hair-544510243.jpg");
+  min-height: 50vh;
+  background-image: url("../assets/images/bar.jpg");
   @extend %image-styles;
 }
 .herren-leistungen-container {
@@ -234,9 +320,6 @@ body {
   height: 20vh;
   background-color: var(--light-gray);
   text-align: center;
-  .header-caption {
-    @extend %vertical-center;
-  }
 }
 .ladies-image-container-1 {
   height: 50vh;
@@ -295,6 +378,7 @@ body {
   .social-links {
     i {
       padding: 0 5px;
+      font-size: 1.5rem;
     }
   }
   .legal-notice {
@@ -305,7 +389,7 @@ body {
   }
   .fa-heart {
     color: #05b5e1;
-    animation: heart-beat 5s linear infinite;
+    animation: heart-beat  
   }
   @keyframes heart-beat {
     0% {

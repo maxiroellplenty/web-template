@@ -101,7 +101,6 @@ gulp.task('build',
       'styles',
       'scripts',
       'build-html',
-      'images',
       'build-js',
       'build-views-html',
       'build-views-sass'

@@ -12,6 +12,7 @@
         crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/fontawesome.css" integrity="sha384-HU5rcgG/yUrsDGWsVACclYdzdCcn5yU8V/3V84zSrPDHwZEdjykadlgI6RHrxGrJ"
         crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="qvo.css">
     <title>QVO</title>
 </head>
@@ -21,7 +22,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-12 start-container">
-                <img class="qvo-brand-logo" src="../assets/images/qvo-logo.svg">
+                <img data-aos="zoom-in-up" data-aos-duration="2000" class="qvo-brand-logo" src="../assets/images/qvo-logo.svg">
             </div>
         </div>
         <div class="row">
@@ -29,68 +30,105 @@
                 <div class="row">
                     <div class="col-lg-3"></div>
                     <div class="col-lg-6 header-intro">
-                        <div>
+                        <div data-aos="fade-right" class="mt-5 mb-5">
                             <h1>Friseur, Barbier einfach wohlfühlen</h1>
                             <hr>
                         </div>
-                        <h3>Seit 1992</h3>
+                        <div class="quick-intro">
+                            <h2 data-aos="fade-right" class="mb-4">
+                                Wir QVO aus Kassel sind dein Friseur und Barbier, <br>
+                                der dir durch jahrelange Erfahrung den besten Service liefert
+                            </h2>
+                            <h3 data-aos="fade-right">
+                                Unser Professionelles Team  berät dich in Fragen Mode und Trends und findet <br> mit dir deinen Style für Bart und Haare  
+                            </h3>
+                        </div>
+                        <h4>Seit 1992</h4>
                     </div>
-                    <div class="col-lg-3 chair-image">
-
-                    </div>
+                    <div class="col-lg-3 chair-image"></div>
                 </div>
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-6 barbier-about-container">
+            <div class="col barbier-image-container">
                 <img class="barbier-logo" src="../assets/images/barbier-logo.svg">
-                <h2 class="p-5">Messerhaarschnitte & Nassrasuren nach allen Regeln des klassischen Barbierhandwerks</h2>
-                <hr>
-                <div class="row barbier-util-container">
-                    <div class="col pinsel-image"></div>
-                    <div class="col kamm-image"></div>
-                    <div class="col rasiermesser-image"></div>
+                <div class="barbier-about-container p-5">
+                    <h2 class="p-4">Messerhaarschnitte & Nassrasuren nach allen Regeln des klassischen Barbierhandwerks</h2>
+                    <hr>
+                </div>  
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 p-5 herren-container">
+                <div class="header-caption">
+                    <h2 class="c-header">Herren</h2>
+                    <h4>{ A Gentleman's World }</h4>
                 </div>
             </div>
-            <div class="col-lg-6 barbier-image-container">
+        </div>
+        <div class="row">
+            <div class="col-lg-6 p-3" data-aos="fade-right">
+                <div class="herren-image-container-1"></div>
+            </div>
+            <div class="col-lg-6 p-5" data-aos="fade-left" data-aos-duration="1000">
+                <div class="c-card">
+                    <div class="img-header">
+                        <hr><img src="../assets/images/schere.svg"><hr>
+                    </div>
+                    <div class="card-content">
+                        <h2 class="header">Haarschnitte</h2>
+                        <p>
+                            Orientalisches Augenbrauen formen<br>
+                            Nassrasur<br>
+                            Haarentfernung
+                        </p>
+                    </div>
+                </div>
+                
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-12 herren-container">
-                <h2 class="header-caption">Herren</h2>
+            <div class="col-lg-6 p-5" data-aos="fade-right">
+                <div class="c-card">
+                    <div class="img-header">
+                        <hr><img src="../assets/images/barber.svg"><hr>
+                    </div>
+                    <div class="card-content">
+                        <h2 class="header">Barbier</h2>
+                        <p>Messerhaarschnitte & Nassrasuren <br> nach allen Regeln des klassischen Barbierhandwerks</p>
+                    </div>
+                    <div class="card-buttons">
+                            <button class="c-button">
+                                <a>Mehr erfahren</a>
+                            </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 p-3" data-aos="fade-left">
+                <div class="herren-image-container-2"></div>
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-4 herren-image-container-1"></div>
-            <div class="col-lg-4 herren-image-container-2"></div>
-            <div class="col-lg-4 herren-image-container-3"></div>
+            <div class="col-lg-6 p-3" data-aos="fade-right">
+                <div class="herren-image-container-3"></div>
+            </div>
+            <div class="col-lg-6 p-5" data-aos="fade-left">
+                <div class="c-card">
+                    <div class="img-header">
+                        <hr><img src="../assets/images/elegant-top-hat.svg"><hr>
+                    </div>
+                    <div class="card-content">
+                        <h2 class="header">Gentleman Drinks</h2>
+                        <p>Was passt besser zu einem entspannten besuch beim Friseur, <br> als ein guter Whisky oder Gin
+                        </p>
+                        <p>Wir bieten natürlich auch nicht alkoholische Getränke</p>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="row">
             <div class="col-lg-12 herren-leistungen-container">
-                <div class="card-deck">
-                    <div class="card">
-                        <img class="card-img-top" src="../assets/images/schere.svg" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">Haarschnitte</h5>
-                            <p class="card-text">Orientalisches Augenbrauen formen Nassrasur Haarentfernung</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img class="card-img-top" src="../assets/images/hairdryer.svg" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">Haarschnitte</h5>
-                            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img class="card-img-top" src="../assets/images/kammtwo.svg" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">Haarschnitte</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This
-                                card has even longer content than the first to show that equal height action.</p>
-                        </div>
-                    </div>
-                </div>
+               
             </div>
         </div>
         <div class="row">
@@ -140,7 +178,9 @@
         </div>
         <div class="row">
             <div class="col-lg-12 ladies-container">
-                <h2 class="header-caption">Ladies</h2>
+                <h2 class="header-caption">
+                    <hr class="header-hr"> <span>Ladies</span><hr class="header-hr">
+                </h2>
             </div>
         </div>
         <div class="row">
@@ -205,5 +245,12 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/js/swiper.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="./qvo.js"></script>
-
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init(
+        {
+            duration: 1000,
+            once: true
+        });
+  </script>
 </html>
