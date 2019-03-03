@@ -8,10 +8,6 @@
         crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
         crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/regular.css" integrity="sha384-OEIzojYBMrmz48aIjVQj7VG38613/sxpP58OW9h5zBYC7biGFlv9tyu5kWmaAYlF"
-        crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/fontawesome.css" integrity="sha384-HU5rcgG/yUrsDGWsVACclYdzdCcn5yU8V/3V84zSrPDHwZEdjykadlgI6RHrxGrJ"
-        crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="qvo.css">
     <title>QVO</title>
@@ -274,7 +270,9 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-12 google-maps-container"></div>
+            <div class="col-lg-12 google-maps-container">
+                <div id="map"></div>
+            </div>
         </div>
         <div class="row">
             <div class="col-lg-12 footer-container p-5">
@@ -303,11 +301,26 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="./qvo.js"></script>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
+<script>
     AOS.init(
-        {
-            duration: 1000,
-            once: true
-        });
-  </script>
+    {
+        duration: 1000,
+        once: true
+    });
+</script>
+<script>
+    // Initialize and add the map
+    function initMap() {
+    // The location of Uluru
+    var uluru = {lat: 51.313157, lng: 9.44872};
+    // The map, centered at Uluru
+    var map = new google.maps.Map(
+        document.getElementById('map'), {zoom: 15, center: uluru});
+    // The marker, positioned at Uluru
+    var marker = new google.maps.Marker({position: uluru, map: map});
+    }
+</script>
+        
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBjTSwKhX43IlgQvzF1ge5nurItTdFqdCA&callback=initMap">
+</script>
 </html>
