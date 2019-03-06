@@ -85,10 +85,11 @@ body {
     font-size: 1.7rem !important;
   }
 }
-#map
+// std classes
+
+.btn
 {
-  height: 100%;
-  margin: 0 -15px;
+  border-radius: 2px;
 }
 
 %vertical-center {
@@ -101,6 +102,11 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 2px;
+}
+
+.container-fluid
+{
+  overflow-x: hidden;
 }
 
 .start-container {
@@ -161,9 +167,9 @@ body {
     padding: 2rem;
     button
     {
-      border-radius: 1px;
+      border-radius: 1px !important;
       border: 1px solid var(--primary-font-color);
-      padding: 0.5rem;
+      padding: 0.5rem !important;
       &:hover
       {
         cursor: pointer;
@@ -171,12 +177,13 @@ body {
       }
       a
       {
-        text-decoration: none;
+        text-decoration: none !important;
         color: var(--primary-font-color) !important;
       }
-    }
+      } 
   }
 }
+
 
 .intro-container {
   background-color: var(--white);
@@ -194,30 +201,23 @@ body {
     }
     position: relative;
     text-align: center;
-    height: 50vh;
+    min-height: 50vh;
     div {
       hr {
         width: 10%;
         border-top: 2px solid var(--primary-font-color);
       }
     }
-    h4 {
-      position: absolute;
-      bottom: 30px;
-      right: 0;
-      left: 0;
-    }
   }
   .chair-image {
-    background-image: url("../assets/images/il_570xN.1263510516_3j0f.jpg");
     background-repeat: no-repeat;
-    background-size: 30vh;
+    background-size: contain;
     background-position: center;
     height: 50vh;
   }
 }
 .barbier-logo {
-  width: 30%;
+  width: 40vh;
   height: auto;
   margin: 0 auto;
   display: block;
@@ -270,29 +270,14 @@ body {
   text-align: center;
 }
 
-.herren-image-container-1 {
+.herren-image-container {
   min-height: 50vh;
-  background-image: url("../assets/images/stock-photo-portrait-of-young-man-wearing-suspenders-in-urban-background-188209364.jpg");
   @extend %image-styles;
 }
-.herren-image-container-2 {
-  min-height: 50vh;
-  background-image: url("../assets/images/barbier-img2.jpg");
-  @extend %image-styles;
-}
-.herren-image-container-3 {
-  min-height: 50vh;
-  background-image: url("../assets/images/bar.jpg");
-  @extend %image-styles;
-}
+
 .herren-leistungen-container {
-  margin-top: 30px;
   min-height: 50vh;
   background-color: var(--white);
-  .card-img-top {
-    height: 200px;
-    padding: 40px;
-  }
 }
 .qvo-quote-1 {
   height: 30vh;
@@ -337,18 +322,7 @@ body {
   background-color: var(--light-gray);
   text-align: center;
 }
-.ladies-image-container-1 {
-  height: 50vh;
-  background-image: url('../assets/images/woman1.jpg');
-  @extend %image-styles;
-}
-.ladies-image-container-3 {
-  background-image: url('../assets/images/stock-photo-closeup-shot-of-a-woman-in-a-nail-salon-receiving-a-manicure-by-a-beautician-with-nail-file-woman-298128602.jpg');
-  height: 50vh;
-  @extend %image-styles;
-}
-.ladies-image-container-2 {
-  background-image: url('../assets/images/stock-photo-hair-stylist-at-work-hairdresser-washing-hair-to-the-customer-before-doing-hairstyle-422650429.jpg');
+.ladies-image-container {
   height: 50vh;
   @extend %image-styles;
 }
@@ -370,7 +344,11 @@ body {
 }
 .google-maps-container {
   height: 50vh;
-  @extend %image-styles;
+  #map
+  {
+    height: 100%;
+    margin: 0 -15px;
+  }
 }
 .contact-container {
   color: var(--white);
@@ -386,6 +364,24 @@ body {
     font-size: 1.3rem;
   }
 }
+.team-header-container
+  {
+    h2
+    {
+      letter-spacing: 0.5rem !important;
+    }
+    background-color: var(--light-gray);
+    text-align: center;
+  }
+
+.team-container
+{
+  height: 50vh;
+  .team-card
+  {
+    
+  }
+}
 .footer-container {
   text-align: center;
   height: auto;
@@ -393,13 +389,15 @@ body {
   .social-links {
     i {
       font-size: 3rem;
+      &:hover
+      {
+        color: #05b5e1;
+      }
     }
   }
-  .legal-notice {
-    a {
-      text-decoration: none;
-      color: var(--primary-font-color) !important;
-    }
+  a {
+    text-decoration: none !important;
+    color: var(--primary-font-color) !important;
   }
   .fa-heart {
     color: #05b5e1;
