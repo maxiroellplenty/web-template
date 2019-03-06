@@ -6,6 +6,7 @@ body {
   --primary-font-color: #2f2c2c;
   --light-gray: #f8f8f8;
   --white: #ffffff;
+  position: relative !important;
   font-family: "Roboto Slab", serif !important;
   background-color: var(--white);
   h1 {
@@ -86,7 +87,16 @@ body {
   }
 }
 // std classes
-
+.nav-style
+{
+  background-color: var(--primary-font-color);
+}
+.nav-link
+{
+  font-size: 150%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
 .btn
 {
   border-radius: 2px;

@@ -38,7 +38,7 @@ function initMap() {
           "background": "#2f2c2c"
         }
       },
-      "position": "top",
+      "position": "bottom",
       "content": {
         "message": "Wir verwenden auf dieser Webseite Cookies und Google Analytics. Mit der Nutzung dieser erklären Sie sich damit einverstanden.\n",
         "dismiss": "OK",
