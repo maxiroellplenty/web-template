@@ -15,8 +15,8 @@
 
       .cls-4 {
         font-size: 50px;
-        font-family: Oxygen, Oxygen;
         font-weight: 400;
+        font-family: Oxygen, sans-serif;
       }
     </style>
   </defs>
