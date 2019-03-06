@@ -17,7 +17,7 @@
         font-size: 50px;
         font-family: Oxygen-light, Oxygen;
         font-weight: 400;
-        letter-spacing: .3rem;
+        letter-spacing: 1rem;
       }
     </style>
   </defs>
