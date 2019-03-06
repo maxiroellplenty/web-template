@@ -43,6 +43,6 @@ function initMap() {
         "message": "Wir verwenden auf dieser Webseite Cookies und Google Analytics. Mit der Nutzung dieser erklären Sie sich damit einverstanden.\n",
         "dismiss": "OK",
         "link": "Mehr",
-        "href": "datenschutz.html#cookies"
+        "href": "datenschutz.html#Cookies"
       }
     })});

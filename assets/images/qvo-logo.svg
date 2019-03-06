@@ -1,1 +1,37 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 287 211"><defs><style>.a,.c{fill:#fff;}.b{fill:#2a2a2a;}.c{font-size:50px;font-family:Seravek;}</style></defs><g transform="translate(25.5 -0.5)"><rect class="a" width="98" height="14" transform="translate(69.5 0.5)"/><path class="a" d="M0,0H41V10H0Z" transform="translate(101.5 126.5)"/><path d="M159.5,282.5" transform="translate(-185 -219)"/><path d="M304.5,299.5" transform="translate(-185 -219)"/><path class="a" d="M82.5,38.5l39,71,34-71-12-7-23,50-26-49Z"/><path class="a" d="M42.5,87.5l9-7,35,40-8,8Z" transform="translate(2)"/><path class="a" d="M40.5,0A40.5,40.5,0,1,1,0,40.5,40.5,40.5,0,0,1,40.5,0Z" transform="translate(1.5 32.5)"/><path class="b" d="M31,0C48.121,0,62,13.655,62,30.5S48.121,61,31,61,0,47.345,0,30.5,13.879,0,31,0Z" transform="translate(11 42.5)"/><path class="a" d="M40.5,0A40.5,40.5,0,1,1,0,40.5,40.5,40.5,0,0,1,40.5,0Z" transform="translate(155.5 32.5)"/><ellipse class="b" cx="31" cy="30.5" rx="31" ry="30.5" transform="translate(165 42.5)"/><text class="c" transform="translate(118.5 196.5)"><tspan x="-142.625" y="0">CARE HOUSE</tspan></text></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 310 206">
+  <defs>
+    <style>
+      .cls-1, .cls-4 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        fill: #2f2c2c;
+      }
+
+      .cls-3 {
+        fill: #2f2c2c;
+      }
+
+      .cls-4 {
+        font-size: 50px;
+        font-family: Oxygen-light, Oxygen;
+        font-weight: 400;
+        letter-spacing: .3rem;
+      }
+    </style>
+  </defs>
+  <g id="qvo-logo" transform="translate(35.5 -0.5)">
+    <rect id="Rectangle_198" data-name="Rectangle 198" class="cls-1" width="98" height="14" transform="translate(69.5 0.5)"/>
+    <path id="Path_61" data-name="Path 61" class="cls-1" d="M0,0H41V10H0Z" transform="translate(101.5 126.5)"/>
+    <path id="Path_55" data-name="Path 55" d="M159.5,282.5" transform="translate(-185 -219)"/>
+    <path id="Path_56" data-name="Path 56" d="M304.5,299.5" transform="translate(-185 -219)"/>
+    <path id="Path_57" data-name="Path 57" class="cls-1" d="M82.5,38.5l39,71,34-71-12-7-23,50-26-49Z"/>
+    <path id="Path_58" data-name="Path 58" class="cls-1" d="M42.5,87.5l9-7,35,40-8,8Z" transform="translate(2)"/>
+    <path id="Path_62" data-name="Path 62" class="cls-1" d="M40.5,0A40.5,40.5,0,1,1,0,40.5,40.5,40.5,0,0,1,40.5,0Z" transform="translate(1.5 32.5)"/>
+    <path id="Path_59" data-name="Path 59" class="cls-2" d="M31,0C48.121,0,62,13.655,62,30.5S48.121,61,31,61,0,47.345,0,30.5,13.879,0,31,0Z" transform="translate(11 42.5)"/>
+    <path id="Path_60" data-name="Path 60" class="cls-1" d="M40.5,0A40.5,40.5,0,1,1,0,40.5,40.5,40.5,0,0,1,40.5,0Z" transform="translate(155.5 32.5)"/>
+    <ellipse id="Ellipse_10" data-name="Ellipse 10" class="cls-3" cx="31" cy="30.5" rx="31" ry="30.5" transform="translate(165 42.5)"/>
+    <text id="CARE_HOUSE" data-name="CARE HOUSE" class="cls-4" transform="translate(119.5 194.5)"><tspan x="-154.81" y="0">CARE HOUSE</tspan></text>
+  </g>
+</svg>
